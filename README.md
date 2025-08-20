@@ -92,4 +92,5 @@ Changes not staged for commit:
         modified:   README.md
 
 Dropped stash@{0} (0ba6c2fe3bcc9b938b395e61b0d02283461da526)
+PS C:\Users\user\Downloads\Gym-Git-Exercise-Solutions> git reset
 ```
