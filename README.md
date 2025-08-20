@@ -94,3 +94,28 @@ Changes not staged for commit:
 Dropped stash@{0} (0ba6c2fe3bcc9b938b395e61b0d02283461da526)
 PS C:\Users\user\Downloads\Gym-Git-Exercise-Solutions> git reset
 ```
+
+# Bundle 2
+
+## Exercise 1
+
+```bash
+PS C:\Users\user\Downloads\Gym-Git-Exercise-Solutions> git branch ft/bundle-2
+PS C:\Users\user\Downloads\Gym-Git-Exercise-Solutions> git checkout ft/bundle-2
+Switched to branch 'ft/bundle-2'
+PS C:\Users\user\Downloads\Gym-Git-Exercise-Solutions> git add services.html
+PS C:\Users\user\Downloads\Gym-Git-Exercise-Solutions> git commit -m "add services page"
+[ft/bundle-2 6eb5d26] add services page
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 services.html
+PS C:\Users\user\Downloads\Gym-Git-Exercise-Solutions> git push origin ft/bundle-2
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (7/7), 819 bytes | 204.00 KiB/s, done.
+Total 7 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/Zerro2003/Gym-Git-Exercise-Solutions.git
+   2e019f4..6eb5d26  ft/bundle-2 -> ft/bundle-2
+```
