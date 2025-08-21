@@ -252,3 +252,48 @@ remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To https://github.com/Zerro2003/Gym-Git-Exercise-Solutions.git
    0560ec5..0672d99  ft/faq-page -> ft/faq-page
 ```
+
+## Exercise 2
+
+```bash
+PS C:\Users\user\Downloads\Gym-Git-Exercise-Solutions> git checkout main
+Switched to branch 'main'
+olutions> git checkout -b ft/home-page-redesign
+Switched to a new branch 'ft/home-page-redesiolutions> git checkout -b ft/home-page-redesign
+Switched to a new branch 'ft/home-page-redesign'
+PS C:\Users\user\Downloads\Gym-Git-Exercise-Solutions> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\user\Downloads\Gym-Git-Exercise-Solutions> git add .
+PS C:\Users\user\Downloads\Gym-Git-Exercise-Solutions> git commit -m "changed some few things in home.html"
+[main 7a4cadb] changed some few things in home.html
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+PS C:\Users\user\Downloads\Gym-Git-Exercise-Solutions> git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+   13073f0..7a4cadb  main -> main
+PS C:\Users\user\Downloads\Gym-Git-Exercise-Solutions> git checkout ft/home-page-redesign
+Switched to branch 'ft/home-page-redesign'
+PS C:\Users\user\Downloads\Gym-Git-Exercise-Solutions> git rebase main
+Successfully rebased and updated refs/heads/ft/home-page-redesign.
+PS C:\Usergit add home.htmlGym-Git-Exercise-Solutions>
+PS C:\Users\user\Downloads\Gym-Git-Exercise-Solutions> git commit -m "redesignation on the home page"
+[ft/home-page-redesign 4c4cef7] redesignation on the home page
+ 1 file changed, 1 insertion(+)
+PS C:\Users\user\Downloads\Gym-Git-Exercise-Solutions> git push origin ft/home-page-redesign
+Enumerating objects: 20, done.
+Counting objects: 100% (20/20), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (17/17), done.
+Writing objects: 100% (17/17), 4.09 KiB | 837.00 KiB/s, done.
+Total 17 (delta 7), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (7/7), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/home-page-redesign' on GitHub by visiting:
+remote:      https://github.com/Zerro2003/Gym-Git-Exercise-Solutions/pull/new/ft/home-page-redesign
+remote:
+To https://github.com/Zerro2003/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/home-page-redesign -> ft/home-page-redesign
+```
