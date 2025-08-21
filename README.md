@@ -119,3 +119,136 @@ remote: Resolving deltas: 100% (2/2), completed with 1 local object.
 To https://github.com/Zerro2003/Gym-Git-Exercise-Solutions.git
    2e019f4..6eb5d26  ft/bundle-2 -> ft/bundle-2
 ```
+
+# Bundle 3
+
+## Exercise 1
+
+```bash
+PS C:\Users\user\Downloads\Gym-Git-Exercise-Solutions> git checkout -b ft/team-page
+Switched to a new branch 'ft/team-page'
+PS C:\Users\user\Downloads\Gym-Git-Exercise-Solutions> git add team.html
+PS C:\Users\user\Downloads\Gym-Git-Exercise-Solutions> git commit -m "add team page"
+[ft/team-page 65f818f] add team page
+ 1 file changed, 14 insertions(+)
+ create mode 100644 team.html
+PS C:\Users\user\Downloads\Gym-Git-Exercise-Solutions> git push origin ft/team-page
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 452 bytes | 150.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/team-page' on GitHub by visiting:
+remote:      https://github.com/Zerro2003/Gym-Git-Exercise-Solutions/pull/new/ft/team-pag
+remote:
+To https://github.com/Zerro2003/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/team-page -> ft/team-page
+PS C:\Users\user\Downloads\Gym-Git-Exercise-Solutions> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\user\Downloads\Gym-Git-Exercise-Solutions> git checkout -b ft/contact-page
+Switched to a new branch 'ft/contact-page'
+65f818f (HEAD -> ft/team-page, origin/ft/team-page) add team page
+13073f0 (origin/main, main, ft/contact-page) delete team
+a599d58 edit the services page
+0474631 Merge pull request #2 from Zerro2003/ft/bundle-2
+1d47264 (origin/ft/bundle-2, ft/bundle-2) updating README
+:
+65f818f (HEAD -> ft/team-page, origin/ft/team-page) add team page
+13073f0 (origin/main, main, ft/contact-page) delete team
+a599d58 edit the services page
+0474631 Merge pull request #2 from Zerro2003/ft/bundle-2
+1d47264 (origin/ft/bundle-2, ft/bundle-2) updating README
+~
+~
+~
+~
+(END)
+65f818f (HEAD -> ft/team-page, origin/ft/team-page) add team page
+13073f0 (origin/main, main, ft/contact-page) delete team
+a599d58 edit the services page
+0474631 Merge pull request #2 from Zerro2003/ft/bundle-2
+1d47264 (origin/ft/bundle-2, ft/bundle-2) updating README
+PS C:\Users\user\Downloads\Gym-Git-Exercise-Solutions> git chekout ft/contact-page
+git: 'chekout' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+PS C:\Users\user\Downloads\Gym-Git-Exercise-Solutions> git checkout ft/contact-page
+Switched to branch 'ft/contact-page'
+PS C:\Users\user\Downloads\Gym-Git-Exercise-Solutions> git cherry-pick 65f818f (HEAD -> ft/team-page, origin/ft/team-page) add team page
+HEAD : The term 'HEAD' is not recognized as
+the name of a cmdlet, function, script
+file, or operable program. Check the
+spelling of the name, or if a path was
+included, verify that the path is correct
+and try again.
+At line:1 char:26
++ git cherry-pick 65f818f (HEAD ->
+ft/team-page, origin/ft/team-page) a ...
++                          ~~~~
+    + CategoryInfo          : ObjectNotFoun
+   d: (HEAD:String) [], CommandNotFoundExc
+  eption
+   ndException
+   ndException
+
+PS C:\Users\user\Downloads\Gym-Git-Exercise-Solutions> git cherry-pick 65f818f
+[ft/contact-page ad1dc15] add team page
+ Date: Thu Aug 21 10:49:49 2025 +0200
+ 1 file changed, 14 insertions(+)
+ create mode 100644 team.html
+PS C:\Users\user\Downloads\Gym-Git-Exercise-Solutions> git add contact.html
+PS C:\Users\user\Downloads\Gym-Git-Exercise-Solutions> git commit -m "Add contact page"
+[ft/contact-page 555cae2] Add contact page
+ 1 file changed, 10 insertions(+)
+ create mode 100644 contact.html
+PS C:\Users\user\Downloads\Gym-Git-Exercise-Solutions> git push origin ft/contact-page
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 826 bytes | 826.00 KiB/s, done.
+Total 6 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+remote:
+To https://github.com/Zerro2003/Gym-Git-Exercise-Solutions.git
+remote:
+To https://github.com/Zerro2003/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/contact-page -> ft/contact-page
+PS C:\Users\user\Downloads\Gym-Git-Exercise-Solutions> git checkout -b ft/faq-page
+Switched to a new branch 'ft/faq-page'
+PS C:\Users\user\Downloads\Gym-Git-Exercise-Solutions> git add faq.html
+PS C:\Users\user\Downloads\Gym-Git-Exercise-Solutions> git commit -m "Add faq page for Q&A"
+[ft/faq-page 0560ec5] Add faq page for Q&A
+ 1 file changed, 10 insertions(+)
+ create mode 100644 faq.html
+PS C:\Users\user\Downloads\Gym-Git-Exercise-Solutions> git push origin ft/faq-page
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 439 bytes | 439.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/faq-page' on GitHub by visiting:
+remote:      https://github.com/Zerro2003/Gym-Git-Exercise-Solutions/pull/new/ft/faq-page
+remote:
+To https://github.com/Zerro2003/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/faq-page -> ft/faq-page
+PS C:\Users\user\Downloads\Gym-Git-Exercise-Solutions> git revert 65f818f --no-edit
+[ft/faq-page 0672d99] Revert "add team page"
+ Date: Thu Aug 21 11:25:07 2025 +0200
+ 1 file changed, 14 deletions(-)
+ delete mode 100644 team.html
+PS C:\Users\user\Downloads\Gym-Git-Exercise-Solutions> git push origin ft/faq-page
+Enumerating objects: 3, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/Zerro2003/Gym-Git-Exercise-Solutions.git
+   0560ec5..0672d99  ft/faq-page -> ft/faq-page
+```
