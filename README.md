@@ -287,3 +287,100 @@ remote: Resolving deltas: 100% (17/17), done.
 To https://github.com/Zerro2003/before-delete.git
  * [new branch]      main -> main
 ```
+
+## Exercise 2
+
+```bash
+PS C:\Users\user\Downloads\Gym-Git-Exercise-SSwitched to a new branch 'ft/footer'
+PS C:\Users\user\Downloads\Gym-Git-Exercise-Solutions> git add footer.html
+PS C:\Users\user\Downloads\Gym-Git-Exercise-Solutions> git commit -m "add footer page"
+[ft/footer 41832f8] add footer page
+olutions> git commit -m "add footer page"
+[ft/footer 41832f8] add footer page
+[ft/footer 41832f8] add footer page
+ 1 file changed, 8 insertions(+)
+ 1 file changed, 8 insertions(+)
+ create mode 100644 footer.html
+PS C:\Users\user\Downloads\Gym-Git-Exercise-Solutions> git add footer.html
+PS C:\Users\user\Downloads\Gym-Git-Exercise-Solutions> git commit -m "updated footer content"
+[ft/footer 7ff8bb1] updated footer content
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+PS C:\Users\user\Downloads\Gym-Git-Exercise-Solutions> git push origin ft/footer
+Enumerating objects: 7, done.
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 697 bytes | 697.00 KiB/s, done.
+Compressing objects: 100% (6/6), done.
+Writing objects: 100% (6/6), 697 bytes | 697.00 KiB/s, done.
+Writing objects: 100% (6/6), 697 bytes | 697.00 KiB/s, done.
+Total 6 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+Total 6 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/footer' on GitHub by visiting:
+remote:      https://github.com/Zerro2003/Gym-Git-Exercise-Solutions/pull/new/ft/footer
+To https://github.com/Zerro2003/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/footer -> ft/footer
+PS C:\Users\user\Downloads\Gym-Git-Exercise-Solutions> git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+PS C:\Users\user\Downloads\Gym-Git-Exercise-Solutions> git checkout -b ft/squashing
+Switched to a new branch 'ft/squashing'
+PS C:\Users\user\Downloads\Gym-Git-Exercise-Solutions> git merge --squash ft/footer
+Updating f7d7026..7ff8bb1
+Fast-forward
+Squash commit -- not updating HEAD
+ footer.html | 10 ++++++++++
+ 1 file changed, 10 insertions(+)
+ create mode 100644 footer.html
+PS C:\Users\user\Downloads\Gym-Git-Exercise-Solutions> git commit -m "footer changes squashing"
+[ft/squashing 9c392a3] footer changes squashing
+ 1 file changed, 10 insertions(+)
+ create mode 100644 footer.html
+PS C:\Users\user\Downloads\Gym-Git-Exercise-Solutions> git push origin ft/squashing
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 433 bytes | 433.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/squashing' on GitHub by visiting:
+remote:      https://github.com/Zerro2003/Gym-Git-Exercise-Solutions/pull/new/ft/squashin
+ise-Solutions.git
+ * [new branch]      ft/squashing -> ft/squashing
+```
+
+# Bundle 5
+
+## Exercise 2
+
+```bash
+
+PS C:\Users\user\Downloads\Gym-Git-Exercise-Solutions> git clone https://github.com/Zerro2003/git-cafe-exercise.git
+Cloning into 'git-cafe-exercise'...
+remote: Enumerating objects: 107, done.
+remote: Counting objects: 100% (15/15), done.
+remote: Compressing objects: 100% (11/11), done.
+remote: Total 107 (delta 5), reused 4 (delta 4), pack-reused 92 (from 1)
+Receiving objects: 100% (107/107), 1.95 MiB | 39.00 KiB/s, done.
+Resolving deltas: 100% (5/5), done.
+PS C:\Users\user\Downloads\Gym-Git-Exercise-Solutions> cd git-cafe-exercise
+PS C:\Users\user\Downloads\Gym-Git-Exercise-Solutions\git-cafe-exercise> git add index.html
+PS C:\Users\user\Downloads\Gym-Git-Exercise-Solutions\git-cafe-exercise> git commit -m "Update welcome message from place to restaurant"
+[main cf092a7] Update welcome message from place to restaurant
+ 1 file changed, 399 insertions(+), 239 deletions(-)
+PS C:\Users\user\Downloads\Gym-Git-Exercise-Solutions\git-cafe-exercise> git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.58 KiB | 807.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Zerro2003/git-cafe-exercise.git
+   d1d3f9c..cf092a7  main -> main
+```
