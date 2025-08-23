@@ -384,3 +384,79 @@ remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
 To https://github.com/Zerro2003/git-cafe-exercise.git
    d1d3f9c..cf092a7  main -> main
 ```
+
+# Bundle 6
+
+## Exercise 1
+
+```bash
+PS C:\Users\user\Downloads\Gym-Git-Exercise-Solutions\git-cafe-exercise> git checkout -b ft/menu-page
+Switched to a new branch 'ft/menu-page'
+PS C:\Users\user\Downloads\Gym-Git-Exercise-Solutions\git-cafe-exercise> git add menu.html
+PS C:\Users\user\Downloads\Gym-Git-Exercise-Solutions\git-cafe-exercise> git commit -m "add menu page with coffee and food items"
+[ft/menu-page 27cf5fa] add menu page with coffee and food items
+ 1 file changed, 15 insertions(+)
+ create mode 100644 menu.html
+PS C:\Users\user\Downloads\Gym-Git-Exercise-Solutions\git-cafe-exercise> git push origin ft/menu-page
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 442 bytes | 147.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/menu-page' on GitHub by visiting:
+remote:      https://github.com/Zerro2003/git-cafe-exercise/pull/new/ft/menu-page
+remote:
+To https://github.com/Zerro2003/git-cafe-exercise.git
+ * [new branch]      ft/menu-page -> ft/menu-page
+```
+
+## Exercise 2
+
+```bash
+PS C:\Users\user\Downloads\Gym-Git-Exercise-SolutionPS C:\Users\user\Downloads\Gym-Git-Exercise-Solutions\git-cafe-exercise> git checkout -b ft/bug-fix
+Switched to a new branch 'ft/bug-fix'
+PS C:\Users\user\Downloads\Gym-Git-Exercise-Solutions\git-cafe-exercise> git add index-4.html
+PS C:\Users\user\Downloads\Gym-Git-Exercise-Solutions\git-cafe-exercise> git commit -m "update title from index-4 page"
+[ft/bug-fix 7ba2bad] update title from index-4 page
+ 1 file changed, 232 insertions(+), 164 deletions(-)
+PS C:\Users\user\Downloads\Gym-Git-Exercise-Solutions\git-cafe-exercise> git push origin ft/bug-fix
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.42 KiB | 726.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/bug-fix' on GitHub by visiting:
+remote:      https://github.com/Zerro2003/git-cafe-exercise/pull/new/ft/bug-fix
+To https://github.com/Zerro2003/git-cafe-exercise.git
+ * [new branch]      ft/bug-fix -> ft/bug-fix
+```
+
+## Exercise 3
+
+```bash
+PS C:\Users\user\Downloads\Gym-Git-Exercise-SolutionPS C:\Users\user\Downloads\Gym-Git-Exercise-Solutions\git-cafe-exercise> git checkout -b ft/hotfix
+Switched to a new branch 'ft/hotfix'
+PS C:\Users\user\Downloads\Gym-Git-Exercise-Solutions\git-cafe-exercise> git add index-4.html
+PS C:\Users\user\Downloads\Gym-Git-Exercise-Solutions\git-cafe-exercise> git commit -m "correct phone number"
+[ft/hotfix 4cbf40e] correct phone number
+ 1 file changed, 231 insertions(+), 163 deletions(-)
+PS C:\Users\user\Downloads\Gym-Git-Exercise-Solutions\git-cafe-exercise> git push origin ft/hotfix
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 1.40 KiB | 716.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/hotfix' on GitHub by visiting:
+remote:      https://github.com/Zerro2003/git-cafe-exercise/pull/new/ft/hotfix
+To https://github.com/Zerro2003/git-cafe-exercise.git
+ * [new branch]      ft/hotfix -> ft/hotfix
+```
